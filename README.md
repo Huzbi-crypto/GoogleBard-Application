@@ -9,3 +9,5 @@ This application is made with the help of electron. Electron is used to create d
 - `npm run package-mac`,
 
 for Windows, Linux, or MacOS respectively.
+
+_Work is in progress..._
