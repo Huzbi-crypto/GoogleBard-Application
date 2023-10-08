@@ -1,0 +1,22 @@
+{
+  "name": "google-bard-app",
+  "productName": "Google Bard",
+  "version": "1.0.0",
+  "description": "A desktop client for Google's Bard AI chatbot, which is a generative AI chatbot similar to OpenAI's ChatGPT, made with Electron.",
+  "main": "main.js",
+  
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "npx electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/favicon.icns --prune=true --out=release-builds",
+    "package-win": "npx electron-packager . --overwrite --asar=true --platform=win32 --arch=x64 --icon=assets/icons/win/favicon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Google Bard\"",
+    "package-linux": "npx electron-packager . --overwrite --platform=linux --arch=x64 --icon=assets/icons/png/favicon.png --prune=true --out=release-builds"
+   },
+
+  "repository": "https://github.com/Huzbi-crypto/GoogleBard-Application",
+  "author": "Huzbi-crypto",
+  "license": "MIT",
+
+  "devDependencies": {
+    "electron": "^22.0.0"
+  }
+}
